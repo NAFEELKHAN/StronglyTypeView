@@ -1,0 +1,23 @@
+@model View_App.Models.Employee;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{ 
+    ViewBag.Title = "Employee Records";
+}
+<table style="width:100%">
+    <tr>
+        <th>UserId</th>
+        <th>Username</th>
+        <th>Address</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>@Model.EmployeeId</td>
+        <td>@Model.Employeename</td>
+        <td>@Model.address</td>
+        <td>@Model.email</td>
+    </tr>
+</table>
+
