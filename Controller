@@ -1,0 +1,11 @@
+   public IActionResult Index()
+        {
+            var Employee = new Employee()
+            {
+                EmployeeId=1,
+                Employeename="Hasan",
+                address="Malir",
+                email="hasan@epaging"
+            };
+            return View(Employee);
+        }
